@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QRCODE</title>
+    <style>
+        .main {
+            margin: auto;
+            width: 50%;
+        }
+        
+        body {
+            background-color: black;
+            color: green;
+            text-align: center;
+        }
+        
+        .form-item {
+            width: 50%;
+            height: 40px;
+            margin-bottom: 20px;
+        }
+        
+        .form {
+            margin-top: 50px;
+        }
+        
+        #btnSubmit {
+            width: 20%;
+            height: 45px;
+            color: white;
+            background-color: green;
+            border-radius: 30px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <form action="/qrcode" method="post" class="form">
+            <h2>Student QR CODE INFORMATION</h2>
+            <input type="text" name="id" class="form-item" placeholder="ENTER ID HERE">
+            <br>
+            <input type="text" name="name" class="form-item" placeholder="ENTER NAME HERE">
+            <br>
+            <input type="text" name="dept" class="form-item" placeholder="ENTER DEPT HERE">
+
+            <p>Description here</p>
+
+            <textarea name="details" cols="40" rows="4"></textarea>
+            <br>
+            <input type="submit" value="Generate" id="btnSubmit">
+
+        </form>
+    </div>
+
+</body>
+
+</html>
